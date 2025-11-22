@@ -3,7 +3,8 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
-import { Calendar, Clock, ExternalLink, Play, Share2, Bookmark } from "lucide-react";
+import { CustomAudioPlayer } from "@/components/AudioPlayer";
+import { Calendar, Clock, ExternalLink, Share2, Bookmark } from "lucide-react";
 import { useParams, Link } from "react-router-dom";
 
 const Episode = () => {
@@ -19,7 +20,7 @@ const Episode = () => {
     paperTitle: "Climate Disruption and Global Supply Chain Resilience: A Network Analysis",
     paperAuthors: "Dr. Sarah Chen, Prof. Michael Roberts",
     paperLink: "#",
-    audioUrl: "#",
+    audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3", // Demo audio
   };
 
   return (
@@ -62,12 +63,11 @@ const Episode = () => {
               {episode.description}
             </p>
 
+            {/* Audio Player */}
+            <CustomAudioPlayer audioUrl={episode.audioUrl} title={episode.title} />
+
             {/* Action Buttons */}
-            <div className="flex flex-wrap gap-3">
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
-                <Play className="mr-2 h-5 w-5" />
-                Listen Now
-              </Button>
+            <div className="flex flex-wrap gap-3 mt-6">
               <Button size="lg" variant="outline">
                 <Share2 className="mr-2 h-4 w-4" />
                 Share
