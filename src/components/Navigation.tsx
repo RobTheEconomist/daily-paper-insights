@@ -1,7 +1,8 @@
 import { NavLink } from "@/components/NavLink";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Newspaper } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import logo from "@/assets/logo.png";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,9 +11,8 @@ export const Navigation = () => {
     <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <NavLink to="/" className="flex items-center gap-2 text-xl font-serif font-bold text-primary hover:text-accent transition-colors">
-            <Newspaper className="h-6 w-6" />
-            The Daily Paper
+          <NavLink to="/" className="flex items-center hover:opacity-80 transition-opacity">
+            <img src={logo} alt="The Daily Paper" className="h-12 w-auto" />
           </NavLink>
 
           {/* Desktop Navigation */}
