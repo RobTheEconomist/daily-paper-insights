@@ -14,7 +14,7 @@ const About = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4">About the Host</h1>
           <p className="text-lg text-primary-foreground/90 max-w-2xl">
-            Meet the person behind The Daily Paper
+            Rob Bradley
           </p>
         </div>
       </section>
@@ -57,10 +57,14 @@ const About = () => {
             {/* Bio */}
             <div className="md:col-span-2">
               <div className="prose prose-lg max-w-none">
-                <h2 className="font-serif font-semibold text-3xl mb-4">Hi, I'm [Your Name]</h2>
+                <h2 className="font-serif font-semibold text-3xl mb-4">I'm your host, Rob Bradley</h2>
                 
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  I started The Daily Paper because I was frustrated. As someone who loves economics and finance, I found myself constantly overwhelmed by the sheer volume of research being published. Every day, brilliant researchers publish findings that could change how we understand markets, policy, and human behavior—but most of us never hear about them.
+                  I have spent a significant amount of time in my career reviewing, interpreting, replicatin, and trying to advance research findings in economics and finance. In fact, I spent several years as part of a team attempting to review all empirical finance papers published and presented every quarter. This was a full time effort executed systematically by talented quantitative researchers. 
+
+                  There is an incredible amount of research shared, published, and presented every year. It is impossible for a single person to sift through this hay stack and find the proverbial needle of valuable results. With AI, this problem becomes much more manageable. However, the most interesting and valuable parts of a research paper are often not what is highlighted by the authors in their abstract or in press releases. Furthermore, the claimed results of a paper can sometimes be overstated, or even undersold by the authors. 
+
+                  Research is most valuable when it is understood in a real world context. Sometimes the results of a paper take on a different meeaning or urgency when they are placed in the appropriate context. Other times, the results of a research experiement cannot be extended directly to a real context. The discussion of the results, their actual meaning in the context of the experiment, how they may or may not extend to real life, and the actual value of these insights together turns the opaque, jargo-laden research paper into an opportunity for anyone to learn more about the world aroun them.
                 </p>
 
                 <p className="text-muted-foreground leading-relaxed mb-4">
